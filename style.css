@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ffe6cc, #ffd9b3),
+                url("images/birthday-person.jpg") center/cover no-repeat fixed;
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 240, 220, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: -1;
+  }
+  
+  .candle-count-display {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 20px;
+    background: rgba(255, 245, 235, 0.9);
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #A85C2B;
+    border: 2px solid #A85C2B;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .candle-count-display span {
+    font-weight: bold;
+    color: #AD030F;
+  }
+  
+  .cake {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -125px;
+  }
+  
+  .plate {
+    width: 270px;
+    height: 110px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .layer {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #A85C2B;
+    box-shadow: 0 2px 0px #8B4A24, 0 4px 0px #6F3920, 0 6px 0px #5A2E1A;
+  }
+  
+  .layer-top {
+    top: 0;
+  }
+  
+  .layer-middle {
+    top: 33px;
+  }
+  
+  .layer-bottom {
+    top: 66px;
+  }
+  
+  .icing {
+    top: 2px;
+    left: 5px;
+    background-color: #E6D2B5;
+    width: 240px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  .icing:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    bottom: 6px;
+    left: 5px;
+    background-color: #f7ecdb;
+    box-shadow: 0 0 4px #f3e2d0;
+    border-radius: 50%;
+  }
+  
+  .drip {
+    width: 50px;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #E6D2B5;
+    position: absolute;
+  }
+  
+  .drip1 {
+    top: 53px;
+    left: 5px;
+    transform: skewY(15deg);
+    height: 48px;
+    width: 40px;
+  }
+  
+  .drip2 {
+    top: 69px;
+    left: 181px;
+    transform: skewY(-15deg);
+  }
+  
+  .drip3 {
+    top: 54px;
+    left: 90px;
+    width: 80px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
